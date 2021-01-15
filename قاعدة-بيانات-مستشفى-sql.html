@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+	</style>
+	<title>قاعدة بيانات مستشفى Sql</title>
+	<!-- Head tag Code --></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Our Digital Gallery" class="navbar-brand mb-1">Our Digital Gallery</a>
+			  			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<!-- <div class="d-block p-4" >
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '90f535d475a9d3b47352e0b1710ce48a',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://t84c3srgclc9.com/90f535d475a9d3b47352e0b1710ce48a/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div> -->				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>قاعدة بيانات مستشفى Sql</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-success" href="/%D8%B4%D8%B9%D8%B1-%D8%AA%D9%87%D9%86%D8%A6%D8%A9-%D8%A8%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC-%D9%85%D9%86-%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9.html">شعر تهنئة بالتخرج من الجامعة</a>
+											<a class="badge badge-light" href="/%D8%B4%D8%B9%D8%B1-%D8%A8%D8%AF%D8%B1-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%85%D8%AD%D8%B3%D9%86-%D8%B9%D9%86-%D8%A7%D9%84%D8%B4%D9%88%D9%82.html">شعر بدر بن عبدالمحسن عن الشوق</a>
+											<a class="badge badge-secondary" href="/%D8%B4%D9%81%D8%A7%D9%81-%D8%A8%D8%AF%D9%88%D9%86-%D8%AE%D9%84%D9%81%D9%8A%D8%A9-%D8%B4%D8%B9%D8%A7%D8%B1-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-png.html">شفاف بدون خلفية شعار وزارة التعليم png</a>
+											<a class="badge badge-dark" href="/%D8%B4%D8%B9%D8%B1-%D8%B9%D9%86-%D8%A7%D9%84%D8%A7%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D9%87%D8%AF%D9%8A-%D9%85%D9%83%D8%AA%D9%88%D8%A8-%D9%82%D8%B5%D9%8A%D8%B1.html">شعر عن الامام المهدي مكتوب قصير</a>
+											<a class="badge badge-dark" href="/%D8%B4%D8%B9%D8%B1-%D8%A8%D8%AF%D8%B1-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%85%D8%AD%D8%B3%D9%86-%D8%AA%D9%88%D9%8A%D8%AA%D8%B1.html">شعر بدر بن عبدالمحسن تويتر</a>
+											<a class="badge badge-primary" href="/%D8%B4%D8%B9%D8%B1-%D9%82%D8%B5%D9%8A%D8%B1-%D8%B9%D9%86-%D8%A7%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D9%81%D9%8A%D8%A9.html">شعر قصير عن الام المتوفية</a>
+											<a class="badge badge-primary" href="/%D8%B4%D8%B9%D8%A7%D8%B1%D8%A9-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF.html">شعارة وزارة التعليم الجديد</a>
+											<a class="badge badge-primary" href="/%D8%B4%D8%B9%D8%B1-%D8%B9%D9%86-%D8%AD%D8%A8-%D8%A7%D9%84%D9%88%D8%B7%D9%86-%D9%84%D8%A7%D8%AD%D9%85%D8%AF-%D9%85%D8%B7%D8%B1.html">شعر عن حب الوطن لاحمد مطر</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : 'cb8baf46ed9a72652ff5562353b34a43',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://t84c3srgclc9.com/cb8baf46ed9a72652ff5562353b34a43/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.araboug.org/ib/uploads/monthly_03_2017/post-166011-0-24630700-1489324781.jpg" data-lightbox="roadtrip" data-title="مساعدة في قاعدة بيانات مستشفي منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية">
+											<img class="card-img v-image" src="https://www.araboug.org/ib/uploads/monthly_03_2017/post-166011-0-24630700-1489324781.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Y36kUu5KFAJD1P1e7XI745A2NnYNvQa2HA';" alt="مساعدة في قاعدة بيانات مستشفي منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">مساعدة في قاعدة بيانات مستشفي منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.araboug.org/ib/uploads/post-102-1229372034.jpg" data-lightbox="roadtrip" data-title="اعطوني ارائكم حول تصميم قاعدة بيانات المرضى منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية">
+											<img class="card-img v-image" src="https://www.araboug.org/ib/uploads/post-102-1229372034.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdTroBN-I160NaU7DIK__f3wRioL11IAiNg';" alt="اعطوني ارائكم حول تصميم قاعدة بيانات المرضى منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">اعطوني ارائكم حول تصميم قاعدة بيانات المرضى منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qze7blJtJUBmdM" data-lightbox="roadtrip" data-title="Https Vb Ckfu Org Attachments C7 Cc Ca E3 C7 Da 4 185848d1397030530 C7 C8 Ed E3 Cd Ca E6 Ec De C7 E6 C7 Da Cf C7 E1 C8 Ed C7 E4 C7 Ca C7 E6 E3 E1 Ce D5 De E6 C7 Da Cf C7 E1 C8 Ed C7 E4 C7 Ca Pdf">
+											<img class="card-img v-image" src="qze7blJtJUBmdM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnMQ1kU7kP4nwVaHlUAghvKeb5TuFGVdKEyQ';" alt="Https Vb Ckfu Org Attachments C7 Cc Ca E3 C7 Da 4 185848d1397030530 C7 C8 Ed E3 Cd Ca E6 Ec De C7 E6 C7 Da Cf C7 E1 C8 Ed C7 E4 C7 Ca C7 E6 E3 E1 Ce D5 De E6 C7 Da Cf C7 E1 C8 Ed C7 E4 C7 Ca Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Https Vb Ckfu Org Attachments C7 Cc Ca E3 C7 Da 4 185848d1397030530 C7 C8 Ed E3 Cd Ca E6 Ec De C7 E6 C7 Da Cf C7 E1 C8 Ed C7 E4 C7 Ca C7 E6 E3 E1 Ce D5 De E6 C7 Da Cf C7 E1 C8 Ed C7 E4 C7 Ca Pdf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Ut-lJOwjKgM/maxresdefault.jpg" data-lightbox="roadtrip" data-title="تصميم قاعدة بيانات مستشفي طريقة إنشاء الجداول وتحديد نوعية الحقول فى الاكسيس Create Databases Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/Ut-lJOwjKgM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM1bKGO9r4iIQABpHsfc2Q2XERIVpVam1SBg';" alt="تصميم قاعدة بيانات مستشفي طريقة إنشاء الجداول وتحديد نوعية الحقول فى الاكسيس Create Databases Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">تصميم قاعدة بيانات مستشفي طريقة إنشاء الجداول وتحديد نوعية الحقول فى الاكسيس Create Databases Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.ae/slide/17326588/100/images/4/%D9%85%D8%AB%D8%A7%D9%84+%28%D9%82%D8%A7%D8%B9%D8%AF%D8%A9+%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89%29.jpg" data-lightbox="roadtrip" data-title="مبادئ قواعد البيانات العلائقية تصميم قاعدة البيانات رسم نموذج الكيان والعلاقة الرابطة Erd المحاضرة الثانية Ppt تنزيل">
+											<img class="card-img v-image" src="https://slideplayer.ae/slide/17326588/100/images/4/%D9%85%D8%AB%D8%A7%D9%84+%28%D9%82%D8%A7%D8%B9%D8%AF%D8%A9+%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1qZXVG7cUDZmzO8361PZSp8TpRHlTgiaEg';" alt="مبادئ قواعد البيانات العلائقية تصميم قاعدة البيانات رسم نموذج الكيان والعلاقة الرابطة Erd المحاضرة الثانية Ppt تنزيل">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">مبادئ قواعد البيانات العلائقية تصميم قاعدة البيانات رسم نموذج الكيان والعلاقة الرابطة Erd المحاضرة الثانية Ppt تنزيل</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mostaql.hsoubcdn.com/uploads/361135-nimaX-1538161672-1-%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1.png" data-lightbox="roadtrip" data-title="نظام الاسكان والوجبات في مستشفى الملك عبدالعزيز مستقل">
+											<img class="card-img v-image" src="https://mostaql.hsoubcdn.com/uploads/361135-nimaX-1538161672-1-%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqgd577iL5Xnk41BkDJJavGwbPuFcMLMaheQ';" alt="نظام الاسكان والوجبات في مستشفى الملك عبدالعزيز مستقل">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">نظام الاسكان والوجبات في مستشفى الملك عبدالعزيز مستقل</h3>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="https://www.araboug.org/ib/uploads/monthly_02_2014/post-102-0-56916000-1391247233.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqgd577iL5Xnk41BkDJJavGwbPuFcMLMaheQ';" alt="نظام الاسكان والوجبات في مستشفى الملك عبدالعزيز مستقل">
+										<div class="card-body">
+						<h3 class="h5"><b></b></h3>
+											</div> 
+				</div>
+			</div>
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.slidesharecdn.com/ss_thumbnails/random-150204020711-conversion-gate01-thumbnail-4.jpg?cb=1423015657" data-lightbox="roadtrip" data-title="تخطيط قاعده بيانات مدرسه">
+											<img class="card-img v-image" src="https://cdn.slidesharecdn.com/ss_thumbnails/random-150204020711-conversion-gate01-thumbnail-4.jpg?cb=1423015657" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnb62elf0VgrCTP1MAQEYoVqzNqlIB4Ub3oA';" alt="تخطيط قاعده بيانات مدرسه">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">تخطيط قاعده بيانات مدرسه</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.rise.company/forum/images/imported/2015/10/Picture64-1.jpg" data-lightbox="roadtrip" data-title="منتدى رايز Rise Forum">
+											<img class="card-img v-image" src="https://www.rise.company/forum/images/imported/2015/10/Picture64-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdmphxeKNji1KuFtZSBASuXZVC1aIF3pao9Q';" alt="منتدى رايز Rise Forum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">منتدى رايز Rise Forum</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.es/slide/14687503/90/images/4/%D9%86%D9%85%D9%88%D8%B0%D8%AC+%D9%82%D8%A7%D8%B9%D8%AF%D8%A9+%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A8%D8%B3%D9%8A%D8%B7%D8%A9+%28%D9%82%D8%A7%D8%B9%D8%AF%D8%A9+%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89%29.jpg" data-lightbox="roadtrip" data-title="امثلة على جداول قواعد البيانات">
+											<img class="card-img v-image" src="https://slideplayer.es/slide/14687503/90/images/4/%D9%86%D9%85%D9%88%D8%B0%D8%AC+%D9%82%D8%A7%D8%B9%D8%AF%D8%A9+%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A8%D8%B3%D9%8A%D8%B7%D8%A9+%28%D9%82%D8%A7%D8%B9%D8%AF%D8%A9+%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR41wyQh_CVoGNi2zXBninVvynnaKSvPGyaw';" alt="امثلة على جداول قواعد البيانات">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">امثلة على جداول قواعد البيانات</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.araboug.org/ib/uploads/monthly_02_2014/post-102-0-56916000-1391247233.jpg" data-lightbox="roadtrip" data-title="مساعدة في تصميم قاعدة بيانات مدرسه منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية">
+											<img class="card-img v-image" src="https://www.araboug.org/ib/uploads/monthly_02_2014/post-102-0-56916000-1391247233.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzHRhHbGv6Zz968N5zSCH9YYPr9rp7s9-2cQ';" alt="مساعدة في تصميم قاعدة بيانات مدرسه منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">مساعدة في تصميم قاعدة بيانات مدرسه منتدى تحليل النظم Systems Analysis Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.mdrscenter.com/wp-content/uploads/2020/01/%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D8%A7%D9%84%D8%B4%D9%84%D8%A7%D9%84.jpg?resize=800%2C788&amp;ssl=1" data-lightbox="roadtrip" data-title="قواعد البيانات تعريفها وأنواعها وخطوات تصميمها مركز البحوث والدراسات متعدد التخصصات">
+											<img class="card-img v-image" src="https://i1.wp.com/www.mdrscenter.com/wp-content/uploads/2020/01/%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D8%A7%D9%84%D8%B4%D9%84%D8%A7%D9%84.jpg?resize=800%2C788&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIM--GZJ6nqhFNMTVfSDv7Ro4NlP7iUXAQzQ';" alt="قواعد البيانات تعريفها وأنواعها وخطوات تصميمها مركز البحوث والدراسات متعدد التخصصات">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">قواعد البيانات تعريفها وأنواعها وخطوات تصميمها مركز البحوث والدراسات متعدد التخصصات</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://solutioncenter.apexsql.com/wp-content/uploads/2013/04/DATASOURCES1.png" data-lightbox="roadtrip" data-title="مزامنة قواعد بيانات Sql Server في مصادر بعيدة مختلفة">
+											<img class="card-img v-image" src="https://solutioncenter.apexsql.com/wp-content/uploads/2013/04/DATASOURCES1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIXW_yJ4j3xWJu2C2gqUCIc31rHKoc2lJVng';" alt="مزامنة قواعد بيانات Sql Server في مصادر بعيدة مختلفة">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">مزامنة قواعد بيانات Sql Server في مصادر بعيدة مختلفة</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/_Dry8uA1gyw/hqdefault.jpg" data-lightbox="roadtrip" data-title="كيفية عمل قاعدة بيانات مكتبة ببرنامج Microsoft Access الدرس الثانى Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/_Dry8uA1gyw/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAxdDRTeiXRk3jGf8CWPHWI3SearyIlYJdQ';" alt="كيفية عمل قاعدة بيانات مكتبة ببرنامج Microsoft Access الدرس الثانى Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">كيفية عمل قاعدة بيانات مكتبة ببرنامج Microsoft Access الدرس الثانى Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/random-131228151050-phpapp02/95/-16-638.jpg?cb=1388243506" data-lightbox="roadtrip" data-title="قاعدة بيانات جاهزة Access لشركة">
+											<img class="card-img v-image" src="https://image.slidesharecdn.com/random-131228151050-phpapp02/95/-16-638.jpg?cb=1388243506" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjYjWo8wdLeUrW1zGKxYt9HSkX2L_MziULMQ';" alt="قاعدة بيانات جاهزة Access لشركة">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">قاعدة بيانات جاهزة Access لشركة</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="hWf7GTTdCW5CzM" data-lightbox="roadtrip" data-title="Http Mti Ntu Edu Iq Wp Content Uploads 2018 10 D9 85 D9 84 D8 B2 D9 85 D8 A9 D9 82 D9 88 D8 A7 D8 B9 D8 Af D8 A7 D9 84 D8 A8 D9 8a D8 A7 D9 86 D8 A7 D8 Aa D8 A7 D9 84 D9 86 D8 B8 D8 B1 D9 8a 2013 Pdf">
+											<img class="card-img v-image" src="hWf7GTTdCW5CzM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaaJ_JaL9c90dldJafvabfuxPXSv1raho1nQ';" alt="Http Mti Ntu Edu Iq Wp Content Uploads 2018 10 D9 85 D9 84 D8 B2 D9 85 D8 A9 D9 82 D9 88 D8 A7 D8 B9 D8 Af D8 A7 D9 84 D8 A8 D9 8a D8 A7 D9 86 D8 A7 D8 Aa D8 A7 D9 84 D9 86 D8 B8 D8 B1 D9 8a 2013 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Http Mti Ntu Edu Iq Wp Content Uploads 2018 10 D9 85 D9 84 D8 B2 D9 85 D8 A9 D9 82 D9 88 D8 A7 D8 B9 D8 Af D8 A7 D9 84 D8 A8 D9 8a D8 A7 D9 86 D8 A7 D8 Aa D8 A7 D9 84 D9 86 D8 B8 D8 B1 D9 8a 2013 Pdf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/1AtYjUGqqSA/hqdefault.jpg" data-lightbox="roadtrip" data-title="مشروع قواعد البيانات مطعم Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/1AtYjUGqqSA/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRahjCJz1Zsq0dfO4emj45ThZbrV0x4LYSy_Q';" alt="مشروع قواعد البيانات مطعم Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">مشروع قواعد البيانات مطعم Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/h7xJvynC9Dg/maxresdefault.jpg" data-lightbox="roadtrip" data-title="001 تحليل نظم الخاص بمشورع معهد الاورام Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/h7xJvynC9Dg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTntIXTdl8fu3MTU_SKRTgHS4Sh6AsBAFqfYg';" alt="001 تحليل نظم الخاص بمشورع معهد الاورام Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">001 تحليل نظم الخاص بمشورع معهد الاورام Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/z9bUaATV_m4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="دورة عمل برنامج ادارة مستشفى C Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/z9bUaATV_m4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3uQpk_Mux7J8rL_UZJFTI9bdfHjTIOdRPQ';" alt="دورة عمل برنامج ادارة مستشفى C Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">دورة عمل برنامج ادارة مستشفى C Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/3oBCDWjbsGY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="انشاء قاعدة بيانات للمرضى والتحاليل بطريقة بسيطه Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/3oBCDWjbsGY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-_7uiC16f4PpxnoLoQEsIXQx5fuX2RRhzg';" alt="انشاء قاعدة بيانات للمرضى والتحاليل بطريقة بسيطه Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">انشاء قاعدة بيانات للمرضى والتحاليل بطريقة بسيطه Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/4gddczefnMA/hqdefault.jpg" data-lightbox="roadtrip" data-title="انشاء قاعدة بيانات في Sql Server نظام ادارة قسم كلية او مدرسة Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/4gddczefnMA/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq7eTznQtD7AdFuiQlGDWmb195TYDBAFJjMw';" alt="انشاء قاعدة بيانات في Sql Server نظام ادارة قسم كلية او مدرسة Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">انشاء قاعدة بيانات في Sql Server نظام ادارة قسم كلية او مدرسة Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/eZHJf36q1RI/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLDHAQ0ylMjvQQiHMvfHLv4lWDP_EA" data-lightbox="roadtrip" data-title="ليبر اوفيس قاعدة بيانات مستشفى Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/eZHJf36q1RI/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLDHAQ0ylMjvQQiHMvfHLv4lWDP_EA" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdvCeKGG_noRfu0SRED2SBai7leIO_bI43_Q';" alt="ليبر اوفيس قاعدة بيانات مستشفى Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">ليبر اوفيس قاعدة بيانات مستشفى Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/-GP1t_Fyaok/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Hospital System برنامج مستشفى كامل Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/-GP1t_Fyaok/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh8TkkjBpUVNtjCe2cCpHTq3GPN2VG1QOErw';" alt="Hospital System برنامج مستشفى كامل Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Hospital System برنامج مستشفى كامل Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/E_n0fyWFiOo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLDrYCan4CD4uo-PA0PRR4TligAbEQ" data-lightbox="roadtrip" data-title="Sql Server Create Supermarket Database انشاء قاعدة بيانات سوبرماركت Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/E_n0fyWFiOo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLDrYCan4CD4uo-PA0PRR4TligAbEQ" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-1_56why1uHSQQuTtBRaboR1M9eOeqx-lw';" alt="Sql Server Create Supermarket Database انشاء قاعدة بيانات سوبرماركت Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Sql Server Create Supermarket Database انشاء قاعدة بيانات سوبرماركت Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/2rYPS9us4o0/maxresdefault.jpg" data-lightbox="roadtrip" data-title="اشهر طرق ادخال البيانات و تجربة ادخال بيانات للجداول داخل قاعدة البيانات Sql Server Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/2rYPS9us4o0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7MQKYY8aWYRr2krkkCXWHFENqfGrw51hUA';" alt="اشهر طرق ادخال البيانات و تجربة ادخال بيانات للجداول داخل قاعدة البيانات Sql Server Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">اشهر طرق ادخال البيانات و تجربة ادخال بيانات للجداول داخل قاعدة البيانات Sql Server Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="CSwWZv-JC6_qbM" data-lightbox="roadtrip" data-title="Http Www Hama Univ Edu Sy Newsites Inst Tech Wp Content Uploads 2018 10 2 2 Pdf">
+											<img class="card-img v-image" src="CSwWZv-JC6_qbM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG07tks29kZ7CbTOXtdhwcABnf7Z3ZlGWRYA';" alt="Http Www Hama Univ Edu Sy Newsites Inst Tech Wp Content Uploads 2018 10 2 2 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Http Www Hama Univ Edu Sy Newsites Inst Tech Wp Content Uploads 2018 10 2 2 Pdf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.araboug.org/ib/uploads/monthly_06_2013/post-130505-0-43614400-1371666053.png" data-lightbox="roadtrip" data-title="أنشأت قاعده بيانات لصيدليه Sql And Pl Sql Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية">
+											<img class="card-img v-image" src="https://www.araboug.org/ib/uploads/monthly_06_2013/post-130505-0-43614400-1371666053.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYXld8VSLzr9yaF_8uPZ9ay0jS9aB9rrzoA';" alt="أنشأت قاعده بيانات لصيدليه Sql And Pl Sql Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">أنشأت قاعده بيانات لصيدليه Sql And Pl Sql Arab Oracle Users Group مجموعة مستخدمي أوراكل العربية</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/X29dhC2i1rk/hqdefault.jpg" data-lightbox="roadtrip" data-title="العلوم و التكنولوجيا مكونات قاعدة بيانات العيادة الطبية وحقول جداولها وربط العلاقات بينها Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/X29dhC2i1rk/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtL7BUIcMVxTDh3drQQnorXlNLGlIDN7z_XA';" alt="العلوم و التكنولوجيا مكونات قاعدة بيانات العيادة الطبية وحقول جداولها وربط العلاقات بينها Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">العلوم و التكنولوجيا مكونات قاعدة بيانات العيادة الطبية وحقول جداولها وربط العلاقات بينها Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/UXl4HgrtIbc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="نظام مستشفى Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/UXl4HgrtIbc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkKiUn9yl0lofBCI4JzTxdW7A1d7P19t4K5Q';" alt="نظام مستشفى Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">نظام مستشفى Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/7PsT0WOfKV0/hqdefault.jpg" data-lightbox="roadtrip" data-title="اظهار عدد معين او نسبة معينة من السجلات فى الاستعلام بدون اكود Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/7PsT0WOfKV0/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLKx41WL1iMptO_--H-goQXDSlu-bTQTyaaA';" alt="اظهار عدد معين او نسبة معينة من السجلات فى الاستعلام بدون اكود Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">اظهار عدد معين او نسبة معينة من السجلات فى الاستعلام بدون اكود Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://smartsoftde.com/wp-content/uploads/2018/03/28.png" data-lightbox="roadtrip" data-title="برنامج سمارت لادارة المستشفيــات سمارت سوفت Smartsoft للبرمجيات">
+											<img class="card-img v-image" src="http://smartsoftde.com/wp-content/uploads/2018/03/28.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDp14Ex6teW3jadO8jccQLu5XNlL9v-PwJg';" alt="برنامج سمارت لادارة المستشفيــات سمارت سوفت Smartsoft للبرمجيات">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">برنامج سمارت لادارة المستشفيــات سمارت سوفت Smartsoft للبرمجيات</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+				<div class="clearfix"></div> 
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B2%D8%A7-%D8%A7%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7-%D9%84%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D9%8A%D9%86-2019.html">فيزا اسبانيا للسعوديين 2019</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B5%D9%84-%D8%A8%D9%86-%D8%B3%D8%B9%D9%88%D8%AF-%D8%A8%D9%86-%D9%85%D8%AD%D9%85%D8%AF-%D8%A2%D9%84-%D8%B3%D8%B9%D9%88%D8%AF-%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7.html">فيصل بن سعود بن محمد آل سعود ويكيبيديا</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D9%84%D9%85-the-boss-baby-%D9%81%D8%B4%D8%A7%D8%B1.html">فيلم The Boss Baby فشار</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D9%84%D9%85-%D8%A7%D9%84%D9%82%D8%B1%D8%B4-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%B1%D8%B3.html">فيلم القرش المفترس</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B1%D9%88%D8%B3-%D9%83%D9%88%D8%B1%D9%88%D9%86%D8%A7-%D8%B1%D8%B3%D9%85%D8%A9-%D8%A7%D9%84%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D8%B1%D8%B6%D9%8A%D8%A9.html">فيروس كورونا رسمة الكرة الارضية</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B5%D9%84-%D8%A8%D9%86-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%B3%D8%B9%D9%88%D8%AF-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2.html">فيصل بن محمد بن سعود بن عبدالعزيز</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B5%D9%84-%D8%A8%D9%86-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A8%D9%86-%D8%AC%D9%87%D8%AC%D8%A7%D9%87-%D8%A8%D9%86-%D8%AD%D9%85%D9%8A%D8%AF.html">فيصل بن سلطان بن جهجاه بن حميد</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B5%D9%84-%D8%A8%D9%86-%D8%AA%D8%B1%D9%83%D9%8A-%D8%A8%D9%86-%D8%A8%D9%86%D8%AF%D8%B1-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2.html">فيصل بن تركي بن بندر بن عبدالعزيز</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D9%84%D9%85-%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D8%B3%D9%81%D8%B1-%D8%B9%D8%A8%D8%B1-%D8%A7%D9%84%D8%B2%D9%85%D9%86.html">فيلم الة السفر عبر الزمن</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B5%D9%84-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A2%D9%84-%D8%B3%D8%B9%D9%88%D8%AF-%D8%A7%D9%84%D8%B2%D9%88%D8%AC-%D8%A7%D9%84%D8%B2%D9%88%D8%AC%D8%A9.html">فيصل بن عبد العزيز آل سعود الزوج الزوجة</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B1%D9%88%D8%B3-%D9%83%D9%88%D8%B1%D9%88%D9%86%D8%A7-%D8%AA%D8%B9%D9%85%D9%8A%D9%85-%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A.html">فيروس كورونا تعميم هيئة الطيران المدني السعودي</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B5%D9%84-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-%D8%A8%D9%86-%D9%85%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A7%D9%86.html">فيصل بن عبدالرحمن بن محمد العجلان</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D9%84%D9%85-the-secret-life-of-bees.html">فيلم The Secret Life Of Bees</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D9%84%D9%85-nanatsu-no-taizai.html">فيلم Nanatsu No Taizai</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D9%84%D9%85-%D8%A7%D9%84%D8%B3%D9%85%D9%83-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%B1%D8%B3.html">فيلم السمك المفترس</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D9%83%D8%AA%D9%88%D8%B1-%D8%B4%D8%B9%D8%A7%D8%B1-%D8%AA%D9%88%D9%8A%D8%AA%D8%B1-png.html">فيكتور شعار تويتر Png</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B5%D9%84-%D8%A8%D9%86-%D9%85%D8%B3%D8%A7%D8%B9%D8%AF-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2.html">فيصل بن مساعد بن عبدالعزيز</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D9%84%D9%85-end-of-watch.html">فيلم End Of Watch</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B3%D8%A7%D8%AA-%D9%88%D8%A7%D8%AA%D8%B3-%D8%A7%D8%A8-%D9%84%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85.html">فيسات واتس اب للتصميم</a></li>
+													<li class="list-group-item"><a href="/%D9%81%D9%8A%D8%B2%D8%A7-%D8%B1%D9%88%D8%B3%D9%8A%D8%A7-%D9%84%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D9%8A%D9%86-2019.html">فيزا روسيا للسعوديين 2019</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : 'cb8baf46ed9a72652ff5562353b34a43',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://t84c3srgclc9.com/cb8baf46ed9a72652ff5562353b34a43/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '90f535d475a9d3b47352e0b1710ce48a',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://t84c3srgclc9.com/90f535d475a9d3b47352e0b1710ce48a/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->
+<script async="async" data-cfasync="false" src="//t84c3srgclc9.com/3258e2b555486d33842633751488acaa/invoke.js"></script>
+<div id="container-3258e2b555486d33842633751488acaa"></div>
+
+<!-- Default Statcounter code for SHURIKEN Arab
+https://al-karimah.web.app/ -->
+<script type="text/javascript">
+var sc_project=12376601; 
+var sc_invisible=1; 
+var sc_security="13abd876"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12376601/0/13abd876/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	</body>
+</html>
